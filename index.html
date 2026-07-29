@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Lac Noir — Extrait de Parfum inspiré du Lac des Cygnes (Tchaïkovski) | Smelody</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<meta name="ext-resource-dependency" content="https://smelody.com/cdn/shop/files/01_LAC_NOIR_7c570434-4c43-4b1e-a0f1-fa9465dfc4fb.png?v=1782475995&width=1200" data-resource-id="packHero">
+<meta name="ext-resource-dependency" content="https://smelody.com/cdn/shop/files/01_LAC_NOIR_0a88dfec-28fe-492b-b845-0f05b7724ba5.png?v=1782994448&width=1200" data-resource-id="packAchat">
+<style>
+  body { margin:0; background:#0a0a0a; color:#f4efe6; font-family:'Jost',sans-serif; font-weight:300; overflow-x:hidden; }
+  a { color:#d8c29a; text-decoration:none; } a:hover { color:#efe3c9; }
+  ::selection { background:#B08D57; color:#0a0a0a; }
+  @keyframes eq { 0%,100%{transform:scaleY(.25)} 50%{transform:scaleY(1)} }
+  @keyframes flotter { from{transform:translateY(0)} to{transform:translateY(-14px)} }
+  @keyframes halo { from{opacity:.6; transform:scale(.96)} to{opacity:1; transform:scale(1.05)} }
+  @keyframes pulser { 0%,100%{opacity:.35} 50%{opacity:1} }
+  @keyframes monter { from{opacity:0; transform:translateY(40px)} to{opacity:1; transform:none} }
+  @keyframes rv { from{opacity:0; transform:translateY(46px)} to{opacity:1; transform:none} }
+  @keyframes sheen { 0%{background-position:0% 50%} 100%{background-position:200% 50%} }
+  @keyframes plx { from{transform:scale(1.14) translateY(-2.5%)} to{transform:scale(1.14) translateY(2.5%)} }
+  @keyframes glisser { from{left:-18%} to{left:104%} }
+  @keyframes bob { from{transform:translateY(0) rotate(-1deg)} to{transform:translateY(-6px) rotate(1.5deg)} }
+  @keyframes rip { 0%{transform:scale(.25); opacity:.6} 100%{transform:scale(1.6); opacity:0} }
+  @keyframes notePulse { 0%,100%{box-shadow:0 0 0 0 rgba(216,194,154,0)} 50%{box-shadow:0 0 20px 3px rgba(216,194,154,.38)} }
+</style>
+</helmet>
+
+<template id="__bundler_thumbnail" data-bg-color="#0a0a0a">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+    <rect width="200" height="200" fill="#0a0a0a"></rect>
+    <text x="100" y="118" text-anchor="middle" font-family="Georgia, serif" font-size="64" fill="#B08D57">♫</text>
+    <text x="100" y="152" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#d8c29a" letter-spacing="6">LAC NOIR</text>
+  </svg>
+</template>
+
+<sc-if value="{{ showBanner }}" hint-placeholder-val="{{ true }}">
+  <div style="background:linear-gradient(90deg,#0a0a0a,#171309 50%,#0a0a0a); border-bottom:1px solid rgba(176,141,87,.25); text-align:center; padding:9px 14px; font-size:10px; letter-spacing:clamp(.14em,1vw,.4em); text-transform:uppercase; color:#d8c29a"><span style="color:#B08D57; font-weight:400">Édition de lancement</span> — Septembre 2026 · Pré-commandes ouvertes</div>
+</sc-if>
+
+<header style="display:flex; align-items:center; justify-content:space-between; gap:16px; padding:16px 3.4vw; position:sticky; top:0; background:rgba(10,10,10,.88); backdrop-filter:blur(14px); border-bottom:1px solid rgba(176,141,87,.16); z-index:40">
+  <a href="https://smelody.com" style="flex-shrink:0; display:flex"><img src="https://smelody.com/cdn/shop/files/LOGO_SMELODY_Horizontale_Gold.svg?v=1776174590&width=435" alt="Smelody — Scent &amp; Music" style="height:24px"></a>
+  <sc-if value="{{ notMobile }}" hint-placeholder-val="{{ true }}">
+    <nav style="display:flex; gap:clamp(14px,2.6vw,44px); font-size:11px; letter-spacing:.28em; text-transform:uppercase; min-width:0">
+      <a href="#composition" style="color:rgba(244,239,230,.82); white-space:nowrap; padding:10px 0; transition:color .3s" style-hover="color:#d8c29a">Composition</a>
+      <a href="#partition" style="color:rgba(244,239,230,.82); white-space:nowrap; padding:10px 0; transition:color .3s" style-hover="color:#d8c29a">Partition</a>
+      <a href="#rituel" style="color:rgba(244,239,230,.82); white-space:nowrap; padding:10px 0; transition:color .3s" style-hover="color:#d8c29a">Rituel</a>
+      <a href="#oeuvre" style="color:rgba(244,239,230,.82); white-space:nowrap; padding:10px 0; transition:color .3s" style-hover="color:#d8c29a">L'Œuvre</a>
+    </nav>
+  </sc-if>
+  <a href="#achat" style="border:1px solid #B08D57; padding:12px 22px; font-size:10.5px; letter-spacing:.28em; text-transform:uppercase; color:#efe3c9; white-space:nowrap; flex-shrink:0; transition:background .3s,color .3s" style-hover="background:#B08D57; color:#0a0a0a">Pré-commander</a>
+</header>
+
+<section style="position:relative; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr)); align-items:center; gap:40px; padding:clamp(40px,7vh,80px) 6vw clamp(40px,6vh,70px); overflow:hidden; background:#0a0a0a">
+  <canvas ref="{{ dustRef }}" style="position:absolute; inset:0; width:100%; height:100%; pointer-events:none"></canvas>
+  <div style="position:absolute; right:-8%; top:10%; width:58vw; height:58vw; border-radius:50%; background:radial-gradient(circle, rgba(176,141,87,.14), transparent 62%); pointer-events:none; animation:halo 9s ease-in-out infinite alternate"></div>
+  <sc-if value="{{ notMobile }}" hint-placeholder-val="{{ true }}">
+    <div style="position:absolute; right:2vw; bottom:18vh; font-family:'Cormorant Garamond',serif; font-style:italic; font-size:clamp(7rem,12vw,13rem); line-height:1; color:transparent; -webkit-text-stroke:1px rgba(176,141,87,.09); user-select:none; pointer-events:none">Op. 20</div>
+  </sc-if>
+
+  <div style="position:relative; z-index:2; animation:monter 1.2s cubic-bezier(.16,1,.3,1) both">
+    <div style="display:flex; align-items:center; gap:18px; font-size:11px; letter-spacing:.32em; text-transform:uppercase; color:#B08D57; margin-bottom:30px"><span style="width:46px; height:1px; background:#B08D57; opacity:.7; flex-shrink:0"></span>Collection Classique · Famille Florale</div>
+    <h1 style="font-family:'Cormorant Garamond',serif; font-weight:400; font-size:clamp(4rem,10vw,10rem); line-height:.9; margin:0; letter-spacing:.01em">Lac <span style="color:#d8c29a; text-shadow:0 0 34px rgba(216,194,154,.42), 0 0 110px rgba(176,141,87,.28)">Noir</span></h1>
+    <div style="margin-top:26px; font-family:'Cormorant Garamond',serif; font-style:italic; font-size:clamp(1.2rem,1.7vw,1.7rem); color:#d8c29a">d'après <em>Le Lac des Cygnes</em> — Piotr Ilitch Tchaïkovski</div>
+    <p style="margin:22px 0 0; max-width:52ch; font-size:15px; line-height:1.75; color:#b7ad9a; text-wrap:pretty">Un extrait de parfum floral, délicat et transparent, qui s'obscurcit doucement — révélant la dualité des deux cygnes, lumière et ombre suspendues sur la peau.</p>
+    <div style="display:flex; flex-wrap:wrap; align-items:center; gap:24px 34px; margin-top:42px">
+      <a href="#achat" style="background:#B08D57; color:#0a0a0a; padding:17px 40px; font-size:11.5px; letter-spacing:.3em; text-transform:uppercase; font-weight:400; white-space:nowrap; transition:background .3s" style-hover="background:#efe3c9">Pré-commander — 49&nbsp;€</a>
+      <div onClick="{{ togglePlay }}" style="display:inline-flex; align-items:center; gap:12px; font-size:11px; letter-spacing:.3em; text-transform:uppercase; color:#d8c29a; padding:12px 0; border-bottom:1px solid rgba(176,141,87,.4); cursor:pointer; white-space:nowrap; transition:color .3s" style-hover="color:#f4efe6">
+        <span style="width:9px; height:9px; border-radius:50%; border:1px solid #B08D57; position:relative; display:inline-block; flex-shrink:0"><span style="position:absolute; inset:2px; border-radius:50%; background:#B08D57; animation:pulser 2.2s ease-in-out infinite"></span></span>
+        {{ heroPlayLabel }}
+      </div>
+    </div>
+  </div>
+
+  <div ref="{{ tiltZoneRef }}" style="position:relative; z-index:1; display:flex; justify-content:center; perspective:1000px">
+    <div ref="{{ tiltRef }}" style="transition:transform .18s ease-out; will-change:transform">
+      <img ref="{{ heroImgRef }}" src="https://smelody.com/cdn/shop/files/01_LAC_NOIR_7c570434-4c43-4b1e-a0f1-fa9465dfc4fb.png?v=1782475995&width=1200" alt="Lac Noir — flacon et écrin, extrait de parfum Smelody" style="max-height:min(64vh,640px); max-width:100%; width:auto; object-fit:contain; filter:drop-shadow(0 60px 90px rgba(0,0,0,.7)); animation:flotter 7s ease-in-out infinite alternate; -webkit-box-reflect:below 6px linear-gradient(transparent 68%, rgba(216,194,154,.14))">
+    </div>
+  </div>
+
+  <div style="grid-column:1/-1; position:relative; z-index:2; display:flex; flex-wrap:wrap; justify-content:space-between; gap:22px 40px; border-top:1px solid rgba(176,141,87,.2); padding-top:18px; font-size:10.5px; letter-spacing:.26em; text-transform:uppercase; color:#9a917f">
+    <div><b style="display:block; font-weight:400; color:#d8c29a; margin-bottom:4px">Extrait de parfum</b>10 ml — 49 €</div>
+    <div><b style="display:block; font-weight:400; color:#d8c29a; margin-bottom:4px">Maison Jean Niel</b>Grasse, depuis 1779</div>
+    <div><b style="display:block; font-weight:400; color:#d8c29a; margin-bottom:4px">Enregistré avec orchestre</b>La Seine Musicale</div>
+    <div><b style="display:block; font-weight:400; color:#d8c29a; margin-bottom:4px">Une fragrance, une œuvre</b>Scent &amp; Music</div>
+  </div>
+</section>
+
+<section style="background:#f4efe6; color:#151310; padding:clamp(90px,14vh,150px) 6vw; text-align:center">
+  <div style="animation:rv 1s both; animation-timeline:view(); animation-range:entry 5% entry 45%">
+    <div style="font-family:'Cormorant Garamond',serif; font-size:clamp(4rem,7vw,7rem); line-height:.4; color:#B08D57; margin-bottom:34px">«</div>
+    <blockquote style="max-width:1100px; margin:0 auto; font-family:'Cormorant Garamond',serif; font-style:italic; font-weight:300; font-size:clamp(1.8rem,4.4vw,4.6rem); line-height:1.22">Vous ne portez pas un parfum,<br>vous <em style="color:#B08D57">interprétez</em> une composition.</blockquote>
+    <div style="margin-top:44px; font-size:10.5px; letter-spacing:.44em; text-transform:uppercase; color:#B08D57">Smelody — Scent &amp; Music</div>
+  </div>
+</section>
+
+<section id="composition" style="background:#f4efe6; color:#151310; padding:0 6vw clamp(100px,15vh,170px); scroll-margin-top:90px">
+  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr)); gap:clamp(50px,6vw,100px); align-items:center; max-width:1400px; margin:0 auto">
+    <div style="animation:rv 1s both; animation-timeline:view(); animation-range:entry 5% entry 45%">
+      <img src="https://smelody.com/cdn/shop/files/01.png?v=1782477345&width=800" alt="Fleur de lotus en noir et blanc — note de tête du parfum Lac Noir" style="width:100%; filter:grayscale(1) contrast(1.04)">
+      <div style="margin-top:16px; font-size:10px; letter-spacing:.36em; text-transform:uppercase; color:#9a917f">Lotus — note de tête</div>
+    </div>
+    <div style="animation:rv 1s both; animation-timeline:view(); animation-range:entry 5% entry 45%">
+      <div style="display:flex; align-items:center; gap:18px; font-size:11px; letter-spacing:.42em; text-transform:uppercase; color:#B08D57; margin-bottom:22px"><span style="width:46px; height:1px; background:#B08D57; opacity:.7; flex-shrink:0"></span>01 — La composition</div>
+      <h2 style="font-family:'Cormorant Garamond',serif; font-weight:400; font-size:clamp(2.2rem,4vw,4.2rem); margin:0; max-width:15ch">Lumière et ombre, <em style="color:#B08D57">suspendues</em> sur la peau</h2>
+      <p style="margin:38px 0 0; max-width:52ch; font-family:'Cormorant Garamond',serif; font-size:clamp(1.15rem,1.5vw,1.5rem); line-height:1.62; color:#3a352c; text-wrap:pretty">Composé à Grasse, Lac Noir est une interprétation olfactive du Lac des Cygnes : un floral délicat et transparent qui s'obscurcit doucement, du lotus aquatique au musc poudré, comme la partition glisse du cygne blanc au cygne noir.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:24px 44px; margin-top:44px; font-size:10.5px; letter-spacing:.3em; text-transform:uppercase; color:#7a7160">
+        <div><b style="display:block; font-weight:400; color:#151310; margin-bottom:5px">Collection</b>Classique</div>
+        <div><b style="display:block; font-weight:400; color:#151310; margin-bottom:5px">Famille</b>Florale</div>
+        <div><b style="display:block; font-weight:400; color:#151310; margin-bottom:5px">Concentration</b>Extrait de parfum</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="partition" style="padding:clamp(90px,14vh,150px) 6vw clamp(100px,15vh,170px); background:#0a0a0a; position:relative; scroll-margin-top:90px">
+  <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:24px 40px; animation:rv 1s both; animation-timeline:view(); animation-range:entry 5% entry 45%">
+    <div>
+      <div style="display:flex; align-items:center; gap:18px; font-size:11px; letter-spacing:.42em; text-transform:uppercase; color:#B08D57; margin-bottom:22px"><span style="width:46px; height:1px; background:#B08D57; opacity:.7; flex-shrink:0"></span>02 — La partition olfactive</div>
+      <h2 style="font-family:'Cormorant Garamond',serif; font-weight:400; font-size:clamp(2.2rem,4.2vw,4.4rem); margin:0">Cinq accords, <em style="color:#B08D57">une portée</em></h2>
+    </div>
+    <div style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1.1rem; color:#9a917f">Le Lac des Cygnes, op. 20 — P. I. Tchaïkovski</div>
+  </div>
+
+  <sc-if value="{{ notMobile }}" hint-placeholder-val="{{ true }}">
+    <div style="margin-top:16px; font-size:11px; letter-spacing:.3em; text-transform:uppercase; color:#9a917f">Survolez chaque note — de la tête au fond, la mélodie descend.</div>
+    <div style="position:relative; margin-top:80px; height:300px">
+      <div style="position:absolute; left:0; right:0; top:20%; height:1px; background:linear-gradient(90deg,rgba(176,141,87,.5),rgba(176,141,87,.12))"></div>
+      <div style="position:absolute; left:0; right:0; top:35%; height:1px; background:linear-gradient(90deg,rgba(176,141,87,.5),rgba(176,141,87,.12))"></div>
+      <div style="position:absolute; left:0; right:0; top:50%; height:1px; background:linear-gradient(90deg,rgba(176,141,87,.5),rgba(176,141,87,.12))"></div>
+      <div style="position:absolute; left:0; right:0; top:65%; height:1px; background:linear-gradient(90deg,rgba(176,141,87,.5),rgba(176,141,87,.12))"></div>
+      <div style="position:absolute; left:0; right:0; top:80%; height:1px; background:linear-gradient(90deg,rgba(176,141,87,.5),rgba(176,141,87,.12))"></div>
+      <div style="position:absolute; left:14px; top:50%; transform:translateY(-54%); font-family:'Cormorant Garamond',serif; font-size:150px; line-height:1; color:#B08D57; opacity:.85; user-select:none">𝄞</div>
+      <div style="position:absolute; top:-38px; left:-18%; width:120px; pointer-events:none; z-index:1; opacity:.65; animation:glisser 62s linear infinite">
+        <div style="animation:bob 5s ease-in-out infinite alternate">
+          <svg viewBox="0 0 240 220" width="120" style="display:block; overflow:visible">
+            <defs>
+              <linearGradient id="cygneOr" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#e6d3ab"></stop>
+                <stop offset=".55" stop-color="#B08D57"></stop>
+                <stop offset="1" stop-color="#6d5530"></stop>
+              </linearGradient>
+            </defs>
+            <ellipse cx="115" cy="196" rx="62" ry="5" fill="none" stroke="rgba(176,141,87,.45)" stroke-width="1" style="transform-origin:115px 196px; animation:rip 4.6s ease-out infinite"></ellipse>
+            <ellipse cx="115" cy="196" rx="62" ry="5" fill="none" stroke="rgba(176,141,87,.3)" stroke-width="1" style="transform-origin:115px 196px; animation:rip 4.6s ease-out 2.3s infinite"></ellipse>
+            <path d="M36 150 C60 148 90 136 124 140 C142 141 154 148 160 156 C172 148 178 134 176 118 C174 100 164 88 156 72 C150 60 152 48 162 42 C166 37 174 36 178 40 L196 47.5 C197.5 48.2 197.5 49 196 49.6 L179 45.5 C175.5 47.5 172 47 171 44 C162 50 160 60 166 74 C172 88 182 100 184 116 C186 132 182 146 174 156 C188 160 195 172 192 186 C178 194 150 197 120 197 C88 197 60 192 48 184 C38 178 33 168 35 158 C35.3 154 35.6 152 36 150 Z" fill="url(#cygneOr)" stroke="#efe3c9" stroke-width=".8" stroke-opacity=".5" stroke-linejoin="round"></path>
+            <path d="M78 162 C104 148 136 148 156 158" fill="none" stroke="rgba(239,227,201,.25)" stroke-width="1"></path>
+            <circle cx="172" cy="41" r="1.3" fill="#0a0a0a"></circle>
+          </svg>
+        </div>
+      </div>
+      <sc-for list="{{ notes }}" as="n" hint-placeholder-count="5">
+        <div onClick="{{ n.pick }}" onMouseEnter="{{ n.pick }}" style="position:absolute; left:{{ n.x }}; top:{{ n.y }}; transform:translate(-50%,-50%); cursor:pointer; text-align:center; z-index:3; padding:12px">
+          <div style="width:30px; height:21px; border-radius:50%; margin:0 auto; background:radial-gradient(circle at 32% 30%, #efe3c9, #B08D57 55%, #7a5f36 90%); transform:rotate(-19deg) scale({{ n.scale }}); box-shadow:{{ n.glow }}; transition:transform .4s, box-shadow .4s; animation:{{ n.anim }}"></div>
+          <div style="margin-top:12px; white-space:nowrap; font-size:10.5px; letter-spacing:.32em; text-transform:uppercase; color:{{ n.labelColor }}; transition:color .3s">{{ n.name }}</div>
+        </div>
+      </sc-for>
+    </div>
+    <div style="max-width:640px; margin:64px auto 0; text-align:center; border:1px solid rgba(176,141,87,.3); border-top:2px solid #B08D57; background:linear-gradient(160deg,#14110c,#0d0c0a); padding:34px 40px 30px">
+      <div style="font-size:9.5px; letter-spacing:.42em; text-transform:uppercase; color:#B08D57; margin-bottom:10px">{{ noteRole }}</div>
+      <div style="font-family:'Cormorant Garamond',serif; font-weight:500; font-size:1.8rem; margin-bottom:10px">{{ noteName }}</div>
+      <div style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1.1rem; line-height:1.55; color:#b7ad9a">{{ noteText }}</div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+    <div style="position:relative; height:86px; margin-top:36px; overflow:hidden">
+      <div style="position:absolute; left:0; right:0; bottom:18px; height:1px; background:linear-gradient(90deg,rgba(176,141,87,.4),rgba(176,141,87,.1))"></div>
+      <div style="position:absolute; bottom:9px; left:-30%; width:88px; opacity:.6; animation:glisser 34s linear infinite">
+        <div style="animation:bob 5s ease-in-out infinite alternate">
+          <svg viewBox="0 0 240 220" width="88" style="display:block; overflow:visible">
+            <defs>
+              <linearGradient id="cygneOrM" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#e6d3ab"></stop>
+                <stop offset=".55" stop-color="#B08D57"></stop>
+                <stop offset="1" stop-color="#6d5530"></stop>
+              </linearGradient>
+            </defs>
+            <ellipse cx="115" cy="196" rx="62" ry="5" fill="none" stroke="rgba(176,141,87,.45)" stroke-width="1" style="transform-origin:115px 196px; animation:rip 4.6s ease-out infinite"></ellipse>
+            <path d="M36 150 C60 148 90 136 124 140 C142 141 154 148 160 156 C172 148 178 134 176 118 C174 100 164 88 156 72 C150 60 152 48 162 42 C166 37 174 36 178 40 L196 47.5 C197.5 48.2 197.5 49 196 49.6 L179 45.5 C175.5 47.5 172 47 171 44 C162 50 160 60 166 74 C172 88 182 100 184 116 C186 132 182 146 174 156 C188 160 195 172 192 186 C178 194 150 197 120 197 C88 197 60 192 48 184 C38 178 33 168 35 158 C35.3 154 35.6 152 36 150 Z" fill="url(#cygneOrM)" stroke="#efe3c9" stroke-width=".8" stroke-opacity=".5" stroke-linejoin="round"></path>
+            <path d="M78 162 C104 148 136 148 156 158" fill="none" stroke="rgba(239,227,201,.25)" stroke-width="1"></path>
+            <circle cx="172" cy="41" r="1.3" fill="#0a0a0a"></circle>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:10px">
+      <sc-for list="{{ accordsList }}" as="a" hint-placeholder-count="5">
+        <div style="border-top:1px solid rgba(176,141,87,.25); padding:24px 0; animation:rv .9s both; animation-timeline:view(); animation-range:entry 0% entry 40%">
+          <div style="font-size:9.5px; letter-spacing:.42em; text-transform:uppercase; color:#B08D57">{{ a.role }}</div>
+          <div style="font-family:'Cormorant Garamond',serif; font-weight:500; font-size:1.4rem; margin:8px 0">{{ a.name }}</div>
+          <div style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1.05rem; line-height:1.55; color:#b7ad9a">{{ a.text }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </sc-if>
+</section>
+
+<section id="rituel" style="background:#f4efe6; color:#151310; padding:clamp(90px,14vh,150px) 6vw; scroll-margin-top:90px">
+  <div style="animation:rv 1s both; animation-timeline:view(); animation-range:entry 5% entry 45%">
+    <div style="display:flex; align-items:center; gap:18px; font-size:11px; letter-spacing:.42em; text-transform:uppercase; color:#B08D57; margin-bottom:22px"><span style="width:46px; height:1px; background:#B08D57; opacity:.7; flex-shrink:0"></span>03 — Le rituel</div>
+    <h2 style="font-family:'Cormorant Garamond',serif; font-weight:400; font-size:clamp(2.2rem,4.2vw,4.4rem); margin:0">Trois temps, <em style="color:#B08D57">comme un mouvement</em></h2>
+  </div>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr)); gap:clamp(40px,5vw,90px); margin-top:clamp(50px,9vh,90px)">
+    <sc-for list="{{ rituel }}" as="r" hint-placeholder-count="3">
+      <div style="position:relative; padding-top:40px; border-top:1px solid rgba(21,19,16,.18); animation:rv 1s both; animation-timeline:view(); animation-range:entry 0% entry 40%">
+        <div style="position:absolute; top:-1px; left:0; width:64px; height:1px; background:#B08D57"></div>
+        <div style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:4.2rem; line-height:1; color:#B08D57">{{ r.num }}</div>
+        <h3 style="font-family:'Cormorant Garamond',serif; font-weight:500; font-size:1.8rem; margin:20px 0 16px">{{ r.title }}</h3>
+        <p style="font-family:'Cormorant Garamond',serif; font-size:1.1rem; line-height:1.65; color:#4a443a; max-width:34ch; margin:0; text-wrap:pretty">{{ r.text }}</p>
+      </div>
+    </sc-for>
+  </div>
+</section>
+
+<section id="oeuvre" style="background:#0a0a0a; padding-bottom:clamp(90px,14vh,150px); scroll-margin-top:90px">
+  <div style="position:relative; height:min(78vh,700px); overflow:hidden">
+    <img src="https://smelody.com/cdn/shop/files/Lac_noir_Tchaikovsky.png?v=1782375755&width=1500" alt="Piotr Ilitch Tchaïkovski — Le Lac des Cygnes, œuvre inspirant Lac Noir" style="width:100%; height:100%; object-fit:cover; object-position:center 30%; filter:brightness(.82); animation:plx linear both; animation-timeline:view(); animation-range:cover 0% cover 100%">
+    <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(10,10,10,.55), transparent 30%, transparent 55%, #0a0a0a 96%)"></div>
+    <div style="position:absolute; left:6vw; right:6vw; bottom:8vh; z-index:2">
+      <div style="display:flex; align-items:center; gap:18px; font-size:11px; letter-spacing:.42em; text-transform:uppercase; color:#B08D57; margin-bottom:22px"><span style="width:46px; height:1px; background:#B08D57; opacity:.7; flex-shrink:0"></span>04 — L'œuvre</div>
+      <h2 style="font-family:'Cormorant Garamond',serif; font-weight:400; font-size:clamp(2.2rem,4.2vw,4.4rem); margin:0; max-width:16ch">Un chef-d'œuvre né <em style="color:#B08D57">d'un échec</em></h2>
+    </div>
+  </div>
+  <div style="padding:clamp(60px,10vh,100px) 6vw 0; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr)); gap:clamp(40px,6vw,90px); align-items:start">
+    <p style="font-family:'Cormorant Garamond',serif; font-size:clamp(1.2rem,1.5vw,1.5rem); line-height:1.7; color:#c9c0ae; max-width:56ch; margin:0; animation:rv 1s both; animation-timeline:view(); animation-range:entry 5% entry 45%">Créé en <strong style="color:#d8c29a; font-weight:500">1877 au Bolchoï</strong>, le ballet connut un échec retentissant à sa première avant de trouver sa forme définitive en <strong style="color:#d8c29a; font-weight:500">1895</strong>. Cette dualité entre lumière et ombre — le cygne blanc, le cygne noir — a inspiré la composition de <strong style="color:#d8c29a; font-weight:500">Lac Noir</strong>.</p>
+    <figure style="margin:0; padding:10px 0 0 clamp(20px,3vw,40px); border-left:1px solid rgba(176,141,87,.4); animation:rv 1s both; animation-timeline:view(); animation-range:entry 5% entry 45%">
+      <blockquote style="margin:0; font-family:'Cormorant Garamond',serif; font-style:italic; font-weight:300; font-size:clamp(1.4rem,2.2vw,2.2rem); line-height:1.4">« L'inspiration est une invitée qui ne rend pas volontiers visite à ceux qui sont paresseux. »</blockquote>
+      <figcaption style="margin-top:26px; font-size:10.5px; letter-spacing:.42em; text-transform:uppercase; color:#B08D57">— Piotr Ilitch Tchaïkovski</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="achat" style="padding:clamp(80px,12vh,150px) 6vw; background:#0a0a0a; scroll-margin-top:90px">
+  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr)); gap:clamp(40px,6vw,90px); align-items:center">
+    <div style="position:relative; background:#0d0c0a; padding:8%; overflow:hidden; animation:rv 1s both; animation-timeline:view(); animation-range:entry 5% entry 45%">
+      <div style="position:absolute; inset:0; background:radial-gradient(circle at 50% 42%, rgba(176,141,87,.14), transparent 60%)"></div>
+      <img ref="{{ achatImgRef }}" src="https://smelody.com/cdn/shop/files/01_LAC_NOIR_0a88dfec-28fe-492b-b845-0f05b7724ba5.png?v=1782994448&width=1200" alt="Lac Noir — extrait de parfum 10 ml, flacon Smelody" style="width:100%; filter:drop-shadow(0 40px 60px rgba(0,0,0,.5)); animation:flotter 8s ease-in-out infinite alternate; position:relative">
+    </div>
+    <div>
+      <div style="display:flex; align-items:center; gap:18px; font-size:11px; letter-spacing:.42em; text-transform:uppercase; color:#B08D57; margin-bottom:22px"><span style="width:46px; height:1px; background:#B08D57; opacity:.7; flex-shrink:0"></span>Extrait de parfum — 10 ml</div>
+      <h2 style="font-family:'Cormorant Garamond',serif; font-weight:400; font-size:clamp(2.2rem,4.2vw,4.4rem); margin:0">Lac Noir</h2>
+      <div style="margin-top:12px; font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1.25rem; color:#B08D57">Le Lac des Cygnes — Tchaïkovski</div>
+      <div style="display:flex; flex-wrap:wrap; align-items:baseline; gap:12px 22px; margin:36px 0 8px">
+        <span style="font-family:'Cormorant Garamond',serif; font-size:3.4rem; white-space:nowrap">49&nbsp;€</span>
+        <span style="font-size:11px; letter-spacing:.3em; text-transform:uppercase; color:#9a917f">Extrait de parfum · 10&nbsp;ml</span>
+      </div>
+      <button onClick="{{ addToCart }}" style="margin-top:24px; width:100%; max-width:440px; background:#B08D57; color:#0a0a0a; border:none; padding:20px 0; font-family:'Jost',sans-serif; font-size:11.5px; letter-spacing:.34em; text-transform:uppercase; white-space:nowrap; cursor:pointer; transition:background .3s" style-hover="background:#efe3c9">{{ cartLabel }}</button>
+      <div style="margin-top:40px; border-top:1px solid rgba(176,141,87,.22); border-bottom:1px solid rgba(176,141,87,.22)">
+        <sc-for list="{{ preuves }}" as="p" hint-placeholder-count="3">
+          <div style="display:flex; align-items:center; gap:18px; padding:15px 4px; font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:#b7ad9a; border-top:1px solid rgba(176,141,87,.1)">
+            <span style="width:7px; height:7px; border-radius:50%; background:#B08D57; flex-shrink:0"></span>{{ p.txt }}
+          </div>
+        </sc-for>
+      </div>
+      <sc-if value="{{ showEdition }}" hint-placeholder-val="{{ true }}">
+        <div style="margin-top:32px; max-width:440px">
+          <div style="display:flex; justify-content:space-between; gap:12px; font-size:10px; letter-spacing:.28em; text-transform:uppercase; color:#9a917f; margin-bottom:10px"><span>Édition de lancement numérotée</span><b style="font-weight:400; color:#d8c29a; white-space:nowrap">500 flacons</b></div>
+          <div style="height:2px; background:rgba(176,141,87,.2)"><div style="height:2px; width:33%; background:#B08D57"></div></div>
+          <div style="margin-top:10px; font-size:10px; letter-spacing:.24em; text-transform:uppercase; color:#7a7160">163 flacons déjà réservés — 337 encore disponibles</div>
+        </div>
+      </sc-if>
+    </div>
+  </div>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr)); gap:36px 2vw; margin-top:clamp(60px,10vh,100px); border-top:1px solid rgba(176,141,87,.18); padding-top:56px">
+    <sc-for list="{{ reassurance }}" as="re" hint-placeholder-count="4">
+      <div style="display:flex; flex-direction:column; gap:12px">
+        <b style="font-weight:400; font-size:12px; letter-spacing:.26em; text-transform:uppercase">{{ re.t }}</b>
+        <span style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1rem; color:#8d8471">{{ re.s }}</span>
+      </div>
+    </sc-for>
+  </div>
+</section>
+
+<section id="faq" style="background:#0a0a0a; padding:0 6vw clamp(90px,14vh,150px)">
+  <div style="max-width:860px; margin:0 auto">
+    <div style="display:flex; align-items:center; gap:18px; font-size:11px; letter-spacing:.42em; text-transform:uppercase; color:#B08D57; margin-bottom:22px; animation:rv 1s both; animation-timeline:view(); animation-range:entry 5% entry 45%"><span style="width:46px; height:1px; background:#B08D57; opacity:.7; flex-shrink:0"></span>Questions fréquentes</div>
+    <h2 style="font-family:'Cormorant Garamond',serif; font-weight:400; font-size:clamp(2rem,3.4vw,3.4rem); margin:0 0 40px">Tout savoir sur <em style="color:#B08D57">Lac Noir</em></h2>
+    <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="4">
+      <div style="border-top:1px solid rgba(176,141,87,.25)">
+        <div onClick="{{ f.toggle }}" style="display:flex; justify-content:space-between; align-items:center; gap:20px; padding:22px 4px; cursor:pointer">
+          <span style="font-family:'Cormorant Garamond',serif; font-size:1.35rem; font-weight:500">{{ f.q }}</span>
+          <span style="color:#B08D57; font-size:20px; flex-shrink:0">{{ f.chevron }}</span>
+        </div>
+        <sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}">
+          <p style="margin:0; padding:0 4px 26px; font-size:14.5px; line-height:1.75; color:#b7ad9a; max-width:64ch; text-wrap:pretty">{{ f.a }}</p>
+        </sc-if>
+      </div>
+    </sc-for>
+    <div style="border-top:1px solid rgba(176,141,87,.25)"></div>
+  </div>
+</section>
+
+<footer style="background:#100f0d; border-top:1px solid rgba(176,141,87,.16); padding:clamp(60px,10vh,90px) 6vw 44px; text-align:center">
+  <a href="https://smelody.com" style="display:inline-block; margin-bottom:28px"><img src="https://smelody.com/cdn/shop/files/LOGO_SMELODY_Horizontale_Gold.svg?v=1776174590&width=435" alt="Smelody" style="height:28px"></a>
+  <p style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1.25rem; color:#9a917f; max-width:46ch; margin:0 auto">« Vous ne portez pas un parfum, vous interprétez une composition. »</p>
+  <nav style="display:flex; justify-content:center; flex-wrap:wrap; gap:18px 40px; margin:46px 0; font-size:10.5px; letter-spacing:.34em; text-transform:uppercase; white-space:nowrap">
+    <a href="#composition" style="color:#9a917f; transition:color .3s" style-hover="color:#d8c29a">Composition</a><a href="#partition" style="color:#9a917f; transition:color .3s" style-hover="color:#d8c29a">Partition</a><a href="#rituel" style="color:#9a917f; transition:color .3s" style-hover="color:#d8c29a">Rituel</a><a href="#oeuvre" style="color:#9a917f; transition:color .3s" style-hover="color:#d8c29a">L'Œuvre</a><a href="#achat" style="color:#9a917f; transition:color .3s" style-hover="color:#d8c29a">Pré-commander</a>
+  </nav>
+  <p style="font-size:10px; letter-spacing:.26em; text-transform:uppercase; color:#5c564a; margin:0">© 2026 Smelody — Maison de parfumerie de niche née à Grasse · Page de démonstration</p>
+</footer>
+
+<sc-if value="{{ showSticky }}" hint-placeholder-val="{{ false }}">
+  <div style="position:fixed; left:0; right:0; bottom:0; z-index:50; display:flex; align-items:center; gap:clamp(12px,2vw,22px); padding:12px 3.4vw; background:rgba(10,10,10,.92); backdrop-filter:blur(16px); border-top:1px solid rgba(176,141,87,.3)">
+    <div onClick="{{ togglePlay }}" style="width:44px; height:44px; border-radius:50%; border:1px solid rgba(176,141,87,.7); display:flex; align-items:center; justify-content:center; color:#efe3c9; cursor:pointer; font-size:12px; flex-shrink:0; transition:border-color .3s" style-hover="border-color:#efe3c9">{{ playIcon }}</div>
+    <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+      <div onClick="{{ togglePlay }}" style="font-size:9.5px; letter-spacing:.2em; text-transform:uppercase; color:#d8c29a; cursor:pointer; line-height:1.5; max-width:110px">{{ mobilePlayLabel }}</div>
+    </sc-if>
+    <sc-if value="{{ notMobile }}" hint-placeholder-val="{{ true }}">
+      <div style="display:flex; align-items:flex-end; gap:3px; height:16px">{{ eqBars }}</div>
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif; font-size:1.25rem">Lac Noir</div>
+        <div style="font-size:9.5px; letter-spacing:.3em; text-transform:uppercase; color:#9a917f">Extrait de parfum 10 ml · Édition de lancement — Septembre 2026</div>
+      </div>
+    </sc-if>
+    <div style="margin-left:auto; font-family:'Cormorant Garamond',serif; font-size:1.6rem; color:#d8c29a; white-space:nowrap">49&nbsp;€</div>
+    <button onClick="{{ addToCart }}" style="background:#B08D57; color:#0a0a0a; border:none; padding:14px 28px; font-family:'Jost',sans-serif; font-size:10.5px; letter-spacing:.3em; text-transform:uppercase; white-space:nowrap; flex-shrink:0; cursor:pointer; transition:background .3s" style-hover="background:#efe3c9">{{ cartLabel }}</button>
+  </div>
+</sc-if>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;launchBanner&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Conversion&quot;}, &quot;editionCounter&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Conversion&quot;}, &quot;stickyBar&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Conversion&quot;}}">
+class Component extends DCLogic {
+  state = { playing: false, note: 0, sticky: false, added: false, faq: 0, isMobile: false };
+  componentDidMount() {
+    const R = window.__resources || {};
+    this.audio = new Audio(R.audioLac || 'https://cdn.shopify.com/s/files/1/1062/4240/8787/files/01_lac_noir.wav?v=1781637149');
+    this.audio.loop = true;
+    this.onScroll = () => {
+      const s = window.scrollY > window.innerHeight * 0.85;
+      if (s !== this.state.sticky) this.setState({ sticky: s });
+    };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    this.mq = window.matchMedia('(max-width: 760px)');
+    this.onMq = () => this.setState({ isMobile: this.mq.matches });
+    this.mq.addEventListener('change', this.onMq);
+    this.onMq();
+    this.knockout(R.packHero || 'https://smelody.com/cdn/shop/files/01_LAC_NOIR_7c570434-4c43-4b1e-a0f1-fa9465dfc4fb.png?v=1782475995&width=1200', () => this._heroImg);
+    this.knockout(R.packAchat || 'https://smelody.com/cdn/shop/files/01_LAC_NOIR_0a88dfec-28fe-492b-b845-0f05b7724ba5.png?v=1782994448&width=1200', () => this._achatImg);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll);
+    if (this.mq) this.mq.removeEventListener('change', this.onMq);
+    if (this.audio) this.audio.pause();
+    cancelAnimationFrame(this._raf);
+  }
+  knockout(src, getEl) {
+    const im = new Image();
+    im.crossOrigin = 'anonymous';
+    im.onload = () => {
+      try {
+        // Détourage par remplissage depuis les bords : seul le fond blanc
+        // connecté au bord devient transparent — les textes clairs imprimés
+        // sur l'étui restent intacts et lisibles.
+        const scale = Math.min(1, 1600 / im.naturalWidth);
+        const w = Math.round(im.naturalWidth * scale), h = Math.round(im.naturalHeight * scale);
+        const c = document.createElement('canvas');
+        c.width = w; c.height = h;
+        const cx = c.getContext('2d');
+        cx.drawImage(im, 0, 0, w, h);
+        const dat = cx.getImageData(0, 0, w, h), p = dat.data;
+        const ok = (i) => { const r = p[i], g = p[i+1], b = p[i+2]; return (Math.max(r, g, b) - Math.min(r, g, b)) < 34 && (r + g + b) > 480; };
+        const seen = new Uint8Array(w * h);
+        const stack = [];
+        for (let x = 0; x < w; x++) { stack.push(x, (h - 1) * w + x); }
+        for (let y = 0; y < h; y++) { stack.push(y * w, y * w + w - 1); }
+        while (stack.length) {
+          const n = stack.pop();
+          if (seen[n] || !ok(n * 4)) continue;
+          seen[n] = 1;
+          const x = n % w;
+          if (x > 0) stack.push(n - 1);
+          if (x < w - 1) stack.push(n + 1);
+          if (n >= w) stack.push(n - w);
+          if (n < w * (h - 1)) stack.push(n + w);
+        }
+        for (let n = 0, i = 0; n < w * h; n++, i += 4) {
+          if (!seen[n]) continue;
+          const lum = (p[i] + p[i+1] + p[i+2]) / 3;
+          let a = (240 - lum) * 3; a = Math.max(0, Math.min(255, a));
+          p[i] = 14; p[i+1] = 12; p[i+2] = 9;
+          if (a < p[i+3]) p[i+3] = a;
+        }
+        cx.putImageData(dat, 0, 0);
+        const url = c.toDataURL('image/png');
+        const apply = () => { const el = getEl(); if (el) el.src = url; else setTimeout(apply, 300); };
+        apply();
+      } catch (e) {}
+    };
+    im.src = src;
+  }
+  startDust() {
+    const cnv = this._dust;
+    if (!cnv || this._raf) return;
+    const ctx = cnv.getContext('2d');
+    const dpr = Math.min(devicePixelRatio || 1, 2);
+    let W, H, parts = [];
+    const size = () => {
+      const r = cnv.getBoundingClientRect();
+      W = cnv.width = r.width * dpr; H = cnv.height = r.height * dpr;
+      parts = Array.from({ length: 150 }, () => ({
+        x: Math.random() * W, y: Math.random() * H,
+        r: (0.4 + Math.random() * 1.5) * dpr,
+        vy: (0.06 + Math.random() * 0.26) * dpr,
+        a: 0.06 + Math.random() * 0.38, ph: Math.random() * 6.28
+      }));
+      this._stars = Array.from({ length: 26 }, () => ({
+        x: Math.random() * W, y: Math.random() * H,
+        r: (1.6 + Math.random() * 2.8) * dpr,
+        vy: (0.04 + Math.random() * 0.12) * dpr,
+        ph: Math.random() * 6.28, sp: 0.0009 + Math.random() * 0.001
+      }));
+    };
+    size();
+    window.addEventListener('resize', size);
+    const star = (x, y, r) => { ctx.beginPath(); ctx.moveTo(x, y - r); ctx.quadraticCurveTo(x, y, x + r, y); ctx.quadraticCurveTo(x, y, x, y + r); ctx.quadraticCurveTo(x, y, x - r, y); ctx.quadraticCurveTo(x, y, x, y - r); ctx.fill(); };
+    const loop = (t) => {
+      ctx.clearRect(0, 0, W, H);
+      ctx.fillStyle = '#d8c29a';
+      for (const p of parts) {
+        p.y -= p.vy; p.x += Math.sin(t * 0.0006 + p.ph) * 0.1 * dpr;
+        if (p.y < -6) { p.y = H + 6; p.x = Math.random() * W; }
+        ctx.globalAlpha = p.a * (0.5 + 0.5 * Math.sin(t * 0.0013 + p.ph * 3));
+        ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, 6.2832); ctx.fill();
+      }
+      ctx.fillStyle = '#efe3c9';
+      for (const s of this._stars) {
+        s.y -= s.vy;
+        if (s.y < -8) { s.y = H + 8; s.x = Math.random() * W; }
+        const w = Math.max(0, Math.sin(t * s.sp + s.ph));
+        ctx.globalAlpha = w * 0.9;
+        star(s.x, s.y, s.r * (0.5 + 0.6 * w));
+      }
+      ctx.globalAlpha = 1;
+      this._raf = requestAnimationFrame(loop);
+    };
+    this._raf = requestAnimationFrame(loop);
+  }
+  renderVals() {
+    const playing = this.state.playing;
+    const ACC = [
+      { name: 'Lotus', role: 'Note de tête', text: '« Transparent et pur, les violons s\u2019élèvent sur l\u2019eau, c\u2019est la mélodie du cygne. »', x: '14%', y: '18%' },
+      { name: 'Ylang-Ylang', role: 'Note de cœur', text: '« Capiteux et trouble, il incarne la dualité, une ombre florale et mystérieuse. »', x: '32%', y: '38%' },
+      { name: 'Rose confite', role: 'Note de cœur', text: '« Sombre et enveloppante, la tension feutrée au cœur du parfum. »', x: '50%', y: '50%' },
+      { name: 'Vanille', role: 'Note de fond', text: '« Douce et satinée, elle accompagne en sourdine. »', x: '68%', y: '65%' },
+      { name: 'Musc poudré', role: 'Note de fond', text: '« Soyeux et persistant, il pose le silence final. »', x: '86%', y: '80%' }
+    ];
+    const sel = ACC[this.state.note];
+    const eqBars = [0,1,2,3,4].map(i => React.createElement('div', {
+      key: i, style: playing
+        ? { width: '2px', height: '16px', background: '#d8c29a', transformOrigin: 'bottom', animation: 'eq ' + (0.6 + i * 0.14) + 's ease-in-out infinite' }
+        : { width: '2px', height: (4 + i * 3) + 'px', background: 'rgba(216,194,154,.35)' }
+    }));
+    const FAQ = [
+      { q: 'Qu\u2019est-ce qu\u2019un extrait de parfum ?', a: 'C\u2019est la forme la plus concentrée de la parfumerie : une tenue prolongée et un sillage intime, pensé pour la peau. Le format 10 ml de Lac Noir se glisse partout et accompagne chaque instant de votre journée.' },
+      { q: 'Comment écouter l\u2019œuvre musicale ?', a: 'Chaque parfum Smelody est lié à une œuvre du répertoire classique, enregistrée avec orchestre à la Seine Musicale. Lancez l\u2019écoute directement depuis cette page — le rituel complet associe la vaporisation du parfum à l\u2019écoute du Lac des Cygnes.' },
+      { q: 'Quand serai-je livré ?', a: 'Les pré-commandes de l\u2019édition de lancement sont expédiées à partir de septembre 2026, dans un écrin signature, avec une livraison soignée et suivie.' },
+      { q: 'L\u2019édition est-elle limitée ?', a: 'Oui. Le lancement de Lac Noir est une édition numérotée de 500 flacons. Chaque flacon réservé est attribué dans l\u2019ordre des pré-commandes.' }
+    ];
+    return {
+      dustRef: (el) => { if (el) { this._dust = el; this.startDust(); } },
+      heroImgRef: (el) => { if (el) this._heroImg = el; },
+      tiltRef: (el) => { if (el) this._tilt = el; },
+      tiltZoneRef: (el) => {
+        if (!el || this._tiltZone === el) return;
+        this._tiltZone = el;
+        el.addEventListener('mousemove', (e) => {
+          const t = this._tilt; if (!t) return;
+          const r = el.getBoundingClientRect();
+          const dx = (e.clientX - r.left) / r.width - 0.5, dy = (e.clientY - r.top) / r.height - 0.5;
+          t.style.transform = 'rotateY(' + (dx * 12).toFixed(2) + 'deg) rotateX(' + (-dy * 9).toFixed(2) + 'deg)';
+        });
+        el.addEventListener('mouseleave', () => { if (this._tilt) this._tilt.style.transform = 'none'; });
+      },
+      achatImgRef: (el) => { if (el) this._achatImg = el; },
+      togglePlay: () => {
+        if (!this.audio) return;
+        if (playing) this.audio.pause(); else this.audio.play().catch(() => {});
+        this.setState({ playing: !playing });
+      },
+      heroPlayLabel: playing ? 'En écoute — Le Lac des Cygnes' : 'Écouter l\u2019œuvre',
+      mobilePlayLabel: playing ? 'En écoute — Tchaïkovski' : 'Découvrir l\u2019œuvre',
+      playIcon: playing ? '❚❚' : '▶',
+      eqBars,
+      addToCart: () => {
+        this.setState({ added: true });
+        clearTimeout(this._t);
+        this._t = setTimeout(() => this.setState({ added: false }), 2200);
+      },
+      cartLabel: this.state.added ? 'Réservé ✓' : 'Pré-commander',
+      notes: ACC.map((a, i) => ({
+        name: a.name, x: a.x, y: a.y,
+        scale: i === this.state.note ? '1.3' : '1',
+        glow: i === this.state.note ? '0 0 34px 4px rgba(216,194,154,.4)' : '0 0 0 0 rgba(0,0,0,0)',
+        anim: i === this.state.note ? 'none' : ('notePulse 2.8s ease-in-out ' + (i * 0.45) + 's infinite'),
+        labelColor: i === this.state.note ? '#efe3c9' : '#9a917f',
+        pick: () => this.setState({ note: i })
+      })),
+      accordsList: ACC,
+      noteRole: sel.role, noteName: sel.name, noteText: sel.text,
+      rituel: [
+        { num: '01', title: 'Ouvrez le flacon', text: 'Ce geste marque une rupture. Le tumulte s\u2019efface, le temps change de tempo, vous entrez dans votre bulle.' },
+        { num: '02', title: 'Initiez la mélodie', text: 'Fermez les yeux. Laissez-vous transporter par les premières notes et éveillez vos sens.' },
+        { num: '03', title: 'Vaporisez la composition', text: 'Respirez. La fragrance rencontre la musique en accord parfait, une émotion entièrement vôtre émerge.' }
+      ],
+      preuves: [
+        { txt: 'Développé avec la maison Jean Niel — Grasse, depuis 1779' },
+        { txt: 'Enregistré avec orchestre à la Seine Musicale' },
+        { txt: 'Brevet européen EUIPO déposé' }
+      ],
+      reassurance: [
+        { t: 'Livraison soignée', s: 'Expédition suivie et protégée' },
+        { t: 'Un conseiller à votre écoute', s: 'La maison vous répond' },
+        { t: 'Paiement sécurisé', s: 'Transaction chiffrée' },
+        { t: 'Un écrin signature', s: 'Chaque flacon dans son écrin' }
+      ],
+      faqs: FAQ.map((f, i) => ({
+        q: f.q, a: f.a,
+        open: this.state.faq === i,
+        chevron: this.state.faq === i ? '−' : '+',
+        toggle: () => this.setState(s => ({ faq: s.faq === i ? -1 : i }))
+      })),
+      isMobile: this.state.isMobile,
+      notMobile: !this.state.isMobile,
+      showBanner: this.props.launchBanner ?? true,
+      showEdition: this.props.editionCounter ?? true,
+      showSticky: (this.props.stickyBar ?? true) && this.state.sticky
+    };
+  }
+}
+</script>
+</body>
+</html>
